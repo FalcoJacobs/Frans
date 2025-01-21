@@ -1,0 +1,753 @@
+@charset "UTF-8";
+body {
+  color: white;
+  background-color: black;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 5vh;
+}
+header h1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 300;
+  width: calc(100% - 50px);
+}
+header button {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border: none;
+}
+header svg {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+table {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 5vh;
+}
+table th {
+  min-width: 16vw;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+table td {
+  text-align: center;
+  min-width: 8vw;
+  padding: 1%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mainInfo {
+  max-width: 100vw;
+  padding: 0% 2%;
+  min-width: 374px;
+  width: 60vw;
+  margin: 0 auto;
+}
+.mainInfo span p {
+  vertical-align: top;
+  display: inline-block;
+}
+.mainInfo p {
+  font-size: 20px;
+  margin-bottom: 4vh;
+}
+.mainInfo p a {
+  color: red;
+}
+.mainInfo h2 {
+  font-size: 25px;
+}
+.mainInfo ol {
+  margin-bottom: 3vh;
+}
+.mainInfo ul {
+  margin-bottom: 4vh;
+  list-style-type: "-  ";
+}
+.mainInfo ul li span {
+  vertical-align: 12px;
+}
+.mainInfo li {
+  font-size: 19px;
+  margin-top: 2vh;
+}
+.mainInfo li .info {
+  display: block;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+  font-weight: 600;
+}
+.mainInfo li b {
+  font-weight: 600;
+}
+.mainInfo .opsommingsTable tr td:last-of-type {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+.colorRed {
+  color: red !important;
+}
+
+.center {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+
+.alignedLeft {
+  text-align: left !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.linkGroup {
+  margin-top: 5vh;
+}
+.linkGroup a {
+  min-width: 300px;
+  padding: 1.5%;
+  width: 30vw;
+  border: solid white;
+  border-radius: 30px;
+  margin: 2vh auto;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.linkGroup a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.grammaireOpties {
+  margin: 0 1vw;
+  text-align: center;
+}
+.grammaireOpties .optie {
+  border: 1px solid white;
+  width: 23%;
+  display: inline-block;
+  margin: 0 0.5vw;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.grammaireOpties .optie:hover {
+  background-color: rgb(24, 24, 24);
+  outline: 2px solid white;
+}
+.grammaireOpties .optie h3 {
+  margin-bottom: 0;
+}
+.grammaireOpties .optie p {
+  margin-top: 0;
+  opacity: 0.6;
+}
+.grammaireOpties .optie svg {
+  height: 40px;
+  width: 40px;
+  padding: 0.5%;
+}
+.grammaireOpties h1 {
+  margin-top: 10vh;
+}
+.grammaireOpties h1:first-of-type {
+  margin-top: 0.67em;
+}
+
+.voorbeeld {
+  opacity: 0.9;
+  display: block;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+
+.oefenLink {
+  text-align: center;
+  min-width: 150px;
+  padding: 1.5%;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid white;
+  border-radius: 30px;
+  margin: 5vh auto 2vh;
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.oefenLink:hover {
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.prépositionsDansMoyens {
+  min-width: 390px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.prépositionsDansMoyens li .voorbeeld {
+  opacity: 0.9;
+  color: rgb(206, 206, 206);
+}
+.prépositionsDansMoyens li .voorbeeld b {
+  opacity: 0.9;
+  color: #ff0000;
+}
+
+.résuméLoisirsPrépositions {
+  min-width: 400px;
+  width: 60vw;
+  margin: 5vh auto;
+}
+.résuméLoisirsPrépositions h2 {
+  font-weight: 300;
+  -webkit-text-decoration: underline rgba(255, 255, 255, 0.8);
+          text-decoration: underline rgba(255, 255, 255, 0.8);
+}
+
+.geenMarker {
+  list-style-type: none !important;
+  padding-left: 0;
+}
+
+.selectBar {
+  position: absolute;
+  padding: 1%;
+  min-width: 220px;
+  width: 15vw;
+  background-color: maroon;
+}
+.selectBar h2 {
+  text-align: center;
+  display: block;
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+.selectBar .vocLijsten {
+  padding: 0.5%;
+  display: block;
+  min-width: 200px;
+  width: 11vw;
+  margin: 0 auto;
+}
+.selectBar .checkBoxGroep {
+  box-sizing: border-box;
+  padding: 1%;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+  transition: 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.selectBar .checkBoxGroep:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+.selectBar input {
+  height: 17px;
+  width: 17px;
+  margin-bottom: 0;
+  accent-color: white;
+}
+.selectBar input:hover {
+  cursor: pointer;
+}
+.selectBar input:selection {
+  accent-color: white;
+}
+.selectBar label {
+  font-size: 22px;
+}
+.selectBar label:hover {
+  cursor: pointer;
+}
+.selectBar .opties {
+  padding: 0.5%;
+  display: block;
+  min-width: 220px;
+  width: 11vw;
+  margin: 0 auto;
+}
+.selectBar button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 20px;
+  margin: 1vh auto;
+  transition: 0.2s;
+  display: block;
+}
+.selectBar button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.mainVocabTest, .vocabStats {
+  background-color: maroon;
+  width: 60vw;
+  min-width: 374px;
+  margin: 0 auto 4vh;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.mainVocabTest h1, .vocabStats h1 {
+  font-size: 35px;
+  text-align: center;
+  padding: 1vh 0;
+}
+.mainVocabTest h2, .vocabStats h2 {
+  margin-bottom: 1vh;
+}
+.mainVocabTest hr, .vocabStats hr {
+  margin-bottom: 3vh;
+}
+.mainVocabTest input, .vocabStats input {
+  position: relative;
+  width: 35vw;
+  min-width: 260px;
+  font-size: 30px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  display: block;
+  margin: 0 auto;
+}
+.mainVocabTest span, .vocabStats span {
+  display: block;
+}
+.mainVocabTest span h2, .vocabStats span h2 {
+  margin: 0;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.vocListAdd {
+  overflow-y: auto;
+  min-width: 220px;
+  position: fixed;
+  width: 60vw;
+  background-color: maroon;
+  box-sizing: border-box;
+  top: 17.6vh;
+  height: 70vh;
+  margin: 0 20vw;
+}
+.vocListAdd input {
+  display: block;
+  width: 50%;
+  position: relative;
+  margin: 0vh auto 2vh;
+  font-size: 20px;
+}
+.vocListAdd table {
+  overflow-y: auto;
+  margin-bottom: 2vh;
+  height: 40vh;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.vocListAdd table::-webkit-scrollbar {
+  width: 0.4em;
+}
+.vocListAdd table::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.vocListAdd table::-webkit-scrollbar-thumb {
+  background-color: rgb(224, 224, 224);
+  outline: 1px solid rgba(0, 0, 0, 0.082);
+}
+.vocListAdd table th {
+  min-width: 25vw;
+  padding: 1%;
+  font-size: 20px;
+}
+.vocListAdd table td {
+  text-align: center;
+  min-width: 8vw;
+  padding: 0;
+}
+.vocListAdd table td input {
+  width: 98%;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  outline: none;
+  font-size: 20px;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  margin: 0;
+}
+.vocListAdd .formSubmit {
+  background-color: white;
+  color: black;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: 1px solid rgb(82, 0, 0);
+  display: block;
+  margin: 0 auto;
+  padding: 0.5% 1%;
+}
+.vocListAdd .formSubmit:hover {
+  cursor: pointer;
+}
+.vocListAdd .closeButton {
+  margin: 1vh 1vw;
+}
+.vocListAdd .moreLessWordsButtons {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.vocListAdd button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 20px;
+  margin: 1vh auto;
+  transition: 0.2s;
+}
+.vocListAdd button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.exerciseForm {
+  min-width: 1200px;
+}
+.exerciseForm .formBlock {
+  vertical-align: top;
+  display: inline-block;
+  margin: 2vh 4%;
+  background-color: black;
+  width: 15vw;
+  min-width: 289px;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 1%;
+  border: 1px solid white;
+}
+.exerciseForm .formBlock:hover {
+  outline: 2px solid white;
+}
+.exerciseForm .formBlock form {
+  height: 26vh;
+  overflow-y: auto;
+}
+.exerciseForm .formBlock form::-webkit-scrollbar {
+  width: 0.3em;
+}
+.exerciseForm .formBlock form::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.exerciseForm .formBlock form::-webkit-scrollbar-thumb {
+  background-color: rgb(224, 224, 224);
+  outline: 1px solid rgba(0, 0, 0, 0.082);
+}
+.exerciseForm .formBlock h2 {
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 1vh;
+  font-weight: 500;
+}
+.exerciseForm .formBlock div {
+  margin: 0.5vh 0;
+  padding: 1%;
+}
+.exerciseForm .formBlock div:hover {
+  font-weight: 500;
+  cursor: pointer;
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+.exerciseForm .formBlock input {
+  height: 16px;
+  width: 16px;
+  accent-color: white;
+}
+.exerciseForm .formBlock label {
+  font-size: 20px;
+}
+.exerciseForm .formBlock label:hover {
+  cursor: pointer;
+}
+.exerciseForm .extraOptionsAndSumbition {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border: 1px solid white;
+  display: block;
+  margin-top: 5vh;
+  box-sizing: border-box;
+  padding: 1%;
+  font-size: 20px;
+}
+.exerciseForm .extraOptionsAndSumbition:hover {
+  outline: 2px solid white;
+}
+.exerciseForm .extraOptionsAndSumbition h2 {
+  margin: 0 0 1vh;
+}
+.exerciseForm .extraOptionsAndSumbition div {
+  margin: 0.3vh 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3%;
+}
+.exerciseForm .extraOptionsAndSumbition div:hover {
+  font-weight: 500;
+  cursor: pointer;
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+.exerciseForm .extraOptionsAndSumbition input {
+  width: 17px;
+  height: 17px;
+  accent-color: white;
+}
+.exerciseForm .extraOptionsAndSumbition label {
+  cursor: pointer;
+}
+.exerciseForm .extraOptionsAndSumbition .numberInput {
+  min-width: 50px;
+  width: 4vw;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  outline: none;
+  border: none;
+}
+.exerciseForm .extraOptionsAndSumbition input::-webkit-outer-spin-button,
+.exerciseForm .extraOptionsAndSumbition input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.exerciseForm button {
+  padding: 1%;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  display: block;
+  margin: 2vh auto;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-top: 3vh;
+  opacity: 0.9;
+}
+.exerciseForm button:hover {
+  opacity: 1;
+  cursor: pointer;
+  outline: 2px solid white;
+}
+
+.conjugaisonTest {
+  background-color: black;
+  border: 1px solid white;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.conjugaisonTest .tempEtVerbe {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+.conjugaisonTest span {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.conjugaisonTest span h2 {
+  font-size: 30px;
+  margin: 1vh 0;
+  display: inline-block;
+  font-weight: 500;
+  padding-right: 0.5vw;
+}
+.conjugaisonTest form {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+.conjugaisonTest form label {
+  font-size: 25px;
+  margin-right: 1vw;
+}
+.conjugaisonTest form input {
+  margin: 2vh 0;
+  font-size: 25px;
+  width: 25vw;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.conjugaisonTest .stats h1 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    background-color: black;
+  }
+  header {
+    margin-bottom: 3vh;
+  }
+  header button {
+    display: none;
+  }
+  header h1 {
+    width: 100%;
+  }
+  .linkGroup {
+    text-align: center;
+  }
+  .grammaireOpties .optie {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+  .selectBar {
+    width: 100vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 3vh 0 5vh 0;
+  }
+  .mainVocabTest, .vocabStats {
+    display: none;
+  }
+  .mainVocabTest h1, .vocabStats h1 {
+    font-size: 25px;
+  }
+  .mainVocabTest h2, .vocabStats h2 {
+    margin-bottom: 1vh;
+  }
+  .mainVocabTest hr, .vocabStats hr {
+    margin-bottom: 3vh;
+  }
+  .mainVocabTest input, .vocabStats input {
+    font-size: 25px;
+    margin-bottom: 3vh;
+  }
+  .mainVocabTest span, .vocabStats span {
+    margin: 2vh 0;
+    display: block;
+  }
+  .mainVocabTest span h2, .vocabStats span h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    display: inline-block;
+  }
+  .exerciseForm {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding-right: 0;
+  }
+  .exerciseForm .formBlock {
+    display: block;
+    margin: 5vh auto;
+  }
+  .exerciseForm .extraOptionsAndSumbition {
+    max-width: 99vw;
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .exerciseForm .extraOptionsAndSumbition div {
+    text-align: left;
+  }
+  .conjugaisonTest {
+    background-color: black;
+    border: 1px solid white;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+  .conjugaisonTest .tempEtVerbe {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+  }
+  .conjugaisonTest span {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .conjugaisonTest span h2 {
+    font-size: 30px;
+    margin: 1vh 0;
+    display: inline-block;
+    font-weight: 500;
+    padding-right: 0.5vw;
+  }
+  .conjugaisonTest form {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+  }
+  .conjugaisonTest form label {
+    font-size: 25px;
+    margin-right: 1vw;
+  }
+  .conjugaisonTest form input {
+    margin: 2vh 0;
+    font-size: 25px;
+    width: 25vw;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+  }
+  .conjugaisonTest .stats h1 {
+    text-align: center;
+  }
+  .conjugaisonTest span {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .conjugaisonTest span h2 {
+    font-size: 23px;
+  }
+  .conjugaisonTest form label {
+    font-size: 25px;
+    margin-right: 1vw;
+  }
+  .conjugaisonTest form input {
+    margin: 2vh 0;
+    font-size: 25px;
+    width: 50vw;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+  }
+  .conjugaisonTest .stats {
+    padding: 2%;
+    box-sizing: border-box;
+  }
+  .conjugaisonTest .stats h1 {
+    text-align: center;
+  }
+  .conjugaisonTest .stats h2 {
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" id="vocabulairePagina">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo3.png">
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- End Montserrat Font -->
+</head>
+<body>
+    <header>
+        <button onclick="history.back()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></button>
+        <h1>Vocabulaire</h1>
+    </header>
+    <div class="selectBar">
+        <h2>Actieve lijsten </h2>
+        <div class="vocLijsten" id="vocLijsten">
+            <div class="checkBoxGroep">
+                <input type="checkbox" name="vocLijsten" id="T1E1">
+                <label for="T1E1">Tour 1 Etape 1</label>
+            </div>
+            <div class="checkBoxGroep">
+                <input type="checkbox" name="vocLijsten" id="T1E2">
+                <label for="T1E2">Tour 1 Etape 2</label>
+            </div>
+            <div class="checkBoxGroep">
+                <input type="checkbox" name="vocLijsten" id="T2E1">
+                <label for="T2E1">Tour 2 Etape 1</label>
+            </div>
+            <div class="checkBoxGroep">
+                <input type="checkbox" name="vocLijsten" id="T2E2" disabled>
+                <label for="T2E2">Tour 2 Etape 2</label>
+            </div>
+            <div class="checkBoxGroep">
+                <input type="checkbox" name="vocLijsten" id="errors" disabled>
+                <label for="errors">Fouten lijst</label>
+            </div>
+            <!-- <div class="checkBoxGroep">
+                <input type="checkbox" name="vocLijsten" id="T3E1">
+                <label for="T3E1">Tour 3 Etape 1</label>
+            </div> -->
+        </div>
+        <button title="Extra vocabulaire lijst toevoegen" id="addVocListButton"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></button>
+        <h2>Extra opties:</h2>
+        <div class="opties" id="opties">
+            <div class="checkBoxGroep" title="ssh">
+                <label for="muteKnop">Mute:</label>
+                <input type="checkbox" name="muteKnop" id="muteKnop">
+            </div>
+            <div class="checkBoxGroep" title="QUACK!">
+                <label for="duckModeKnop">DuckMode: </label>
+                <input type="checkbox" name="duckModeKnop" id="duckModeKnop">
+            </div>
+            <div class="checkBoxGroep" title="Accenten zijn niet verplicht voor een goed resultaat">
+                <label for="accentGevoeligKnop">Accentgevoelig: </label>
+                <input type="checkbox" name="accentGevoeligKnop" id="accentGevoeligKnop" checked>
+            </div>
+        </div>
+    </div>
+    <div class="mainVocabTest">
+        <h1 id="nederlandsWoord">Selecteer een lijst om te beginnen</h1>
+        <form action="" id="formulier">
+            <input type="text" id="translationInput" autocomplete="off" placeholder="Franse vertaling" disabled>
+        </form>
+    </div>
+    <div class="vocabStats">
+        <h1 id="juistOfFout">Juist/Fout</h1>
+        <hr>
+        <span><h2><b>Woorden:</b></h2>&ensp;<h2 id="woordenComplete">0 /</h2></span>
+        <span><h2><b>Correct:</b></h2>&ensp;<h2 id="correctPercentage">0%</h2></span>
+        <h2>Vorig antwoord:</h2>
+        <span><h2><b>Nederlands woord: </b></h2>&emsp;<h2 id="vorigNederlandsWoord"></h2></span>
+        <span><h2><b>Vorige input: </b></h2>&emsp;<h2 id="vorigeInput"></h2></span>
+        <span><h2><b>Correct antwoord: </b></h2>&emsp;<h2 id="vorigFransWoord"></h2></span>
+    </div>
+    <div class="vocListAdd hidden" id="vocListAddScreen">
+        <button class="closeButton"id="addVocListCloseButton"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+        <form action="" id="newVocabListForm">
+            <input type="text" placeholder="Lijst titel" required>
+            <table id="newVocListTable">
+                <thead>
+                    <tr class="">
+                        <th>Nederlands Woord</th>
+                        <th>Frans Woord</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <div class="woordenInputs" id="woordenInputs">
+                        <tr id="nieuweVocLijstRij1">
+                            <td><input type="text" id="nieuweVocLijstNL1" required></td>
+                            <td><input type="text" id="nieuweVocLijstFR1" required></td>
+                        </tr>
+                    </div>
+                </tbody>
+            </table>
+            <div class="moreLessWordsButtons">
+                <button id="addWordButton"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></button>
+                <button id="removeWordButton"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M200-440v-80h560v80H200Z"/></svg></button>
+            </div>
+            <input type="submit" class="formSubmit">
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

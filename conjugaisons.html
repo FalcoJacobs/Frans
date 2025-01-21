@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkwoorden</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo3.png">
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- End Montserrat Font -->
+</head>
+<body id="conjugaisonPagina">
+    <header>
+        <button onclick="history.back()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></button>
+        <h1>Conjugaisons</h1>
+    </header>
+    <div class="mainInfo exerciseForm" id="exerciseForm">
+        <div class="formBlock">
+            <h2>Temps:</h2>
+            <form action="" id="tijdenForm">
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="présent" value="présent">
+                    <label for="présent">Présent</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="futur" value="futur">
+                    <label for="futur">Futur Simple</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="passé" value="passé">
+                    <label for="passé">Passé Simple</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="imparfait" value="imparfait">
+                    <label for="imparfait">Imparfait</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="conditionnelPrésent" value="conditionnelPrésent">
+                    <label for="conditionnelPrésent">Conditionnel Présent</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="subjonctifPrésent" value="subjonctifPrésent">
+                    <label for="subjonctifPrésent">Subjonctif Présent</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="futurProche" value="futurProche">
+                    <label for="futurProche">Futur Proche</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tijdenCheckboxes" id="passéComposé" value="passéComposé">
+                    <label for="passéComposé">Passé Composé</label>
+                </div>
+            </form>
+        </div>
+        <div class="formBlock">
+            <h2>Verbes irréguliers:</h2>
+            <form action="" id="verbesIrréguliersForm">
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="aller" value="aller">
+                    <label for="aller">Aller</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="avoir" value="avoir">
+                    <label for="avoir">Avoir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="comprendre" value="comprendre">
+                    <label for="comprendre">Comprendre</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="croire" value="croire">
+                    <label for="croire">Croire</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="devoir" value="devoir">
+                    <label for="devoir">Devoir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="dire" value="dire">
+                    <label for="dire">Dire</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="être" value="être">
+                    <label for="être">Être</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="faire" value="faire">
+                    <label for="faire">Faire</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="falloir" value="falloir">
+                    <label for="falloir">Falloir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="mettre" value="mettre">
+                    <label for="mettre">Mettre</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="pouvoir" value="pouvoir">
+                    <label for="pouvoir">Pouvoir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="prendre" value="prendre">
+                    <label for="prendre">Prendre</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="savoir" value="savoir">
+                    <label for="savoir">Savoir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="sortir" value="sortir">
+                    <label for="sortir">Sortir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="tenir" value="tenir">
+                    <label for="tenir">Tenir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="venir" value="venir">
+                    <label for="venir">Venir</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesIrréguliers" id="vouloir" value="vouloir">
+                    <label for="vouloir">Vouloir</label>
+                </div>
+            </form>
+        </div>
+        <div class="formBlock">
+            <h2>Verbes réguliers:</h2>
+            <form action="" id="verbesRéguliersForm">
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="aimer" value="aimer">
+                    <label for="aimer">Aimer</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="arriver" value="arriver">
+                    <label for="arriver">Arriver</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="demander" value="demander">
+                    <label for="demander">Demander</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="donner" value="donner">
+                    <label for="donner">Donner</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="entrer" value="entrer">
+                    <label for="entrer">Entrer</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="parler" value="parler">
+                    <label for="parler">Parler</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="passer" value="passer">
+                    <label for="passer">Passer</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="verbesRéguliers" id="rester" value="rester">
+                    <label for="rester">Rester</label>
+                </div>
+            </form>
+        </div>
+        <div class="extraOptionsAndSumbition">
+            <form action="" id="extraOptions">
+                <h2>Extra Opties:</h2>
+                <div>
+                    <input type="checkbox" name="extraOptionsCheckboxes" id="toetsModus" disabled>
+                    <label for="toetsModus">Toetsmodus</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="extraOptionsCheckboxes" id="accentgevoeligheid" checked>
+                    <label for="accentgevoeligheid">Accentgevoeligheid</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="extraOptionsCheckboxes" id="skipOnWrong" checked disabled>
+                    <label for="skipOnWrong">Doorgaan ondanks verkeerd antwoord</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="extraOptionsCheckboxes" id="hideResult">
+                    <label for="hideResult">Verberg resulaat</label>
+                </div>
+                <div class="noBoder">
+                    <label for="amountOfExcercises">Aantal oefeningen: </label>
+                    <input class="numberInput" type="number" name="extraOptionsCheckboxes" id="amountOfExcercises" min="1" max="1000" value="20">
+                </div>
+            </form>
+        </div>
+        <button id="startTestButton">Start Test</button>
+    </div>
+    <div class="mainInfo conjugaisonTest hidden" id="conjugaisonTest">
+        <div class="tempEtVerbe">
+            <span><h2>Temp:</h2><h2 class="bold" id="tense">Temp</h2></span>
+            <span><h2>Verbe:</h2><h2 class="bold" id="verbe">Verbe</h2></span>
+        </div>
+        <form action="" id="inputExcerciseForm">
+            <label class="bold" for="inputConjugation" id="pronoun">...</label>
+            <input type="text" id="inputConjugation" name="inputConjugation" autocomplete="off">
+        </form>
+        <div class="stats">
+            <h1 id="juistOfFout">-</h1>
+            <span><h2>oefeningen: </h2> <h2 id="oefeningen">0 / (totaal aantal oefeningen)</h2></span>
+            <span><h2>Correct: </h2> <h2 id="correctPercentage">-%</h2></span>
+            <h2>Vorig Antwoord:</h2>
+            <span><h2>Vorige vraag: </h2> <h2 id="vorigeVraag">-</h2></span>
+            <span><h2>Vorige input: </h2> <h2 id="vorigInput">-</h2></span>
+            <span><h2>Vorig Antwoord: </h2> <h2 id="vorigAntwoord">-</h2></span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
