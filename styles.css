@@ -518,7 +518,6 @@ table td {
   padding: 0.3%;
 }
 .exerciseForm .extraOptionsAndSumbition div:hover {
-  font-weight: 500;
   cursor: pointer;
   outline: 1px solid white;
   outline-offset: -1px;
